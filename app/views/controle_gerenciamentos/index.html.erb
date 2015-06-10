@@ -1,0 +1,35 @@
+<h1>Listing controle_gerenciamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Valor hora</th>
+      <th>Horaadd</th>
+      <th>Valor diaria</th>
+      <th>Mensalista meioturno</th>
+      <th>Mensalista integral</th>
+      <th>Num vagas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @controle_gerenciamentos.each do |controle_gerenciamento| %>
+      <tr>
+        <td><%= controle_gerenciamento.valor_hora %></td>
+        <td><%= controle_gerenciamento.horaadd %></td>
+        <td><%= controle_gerenciamento.valor_diaria %></td>
+        <td><%= controle_gerenciamento.mensalista_meioturno %></td>
+        <td><%= controle_gerenciamento.mensalista_integral %></td>
+        <td><%= controle_gerenciamento.num_vagas %></td>
+        <td><%= link_to 'Show', controle_gerenciamento %></td>
+        <td><%= link_to 'Edit', edit_controle_gerenciamento_path(controle_gerenciamento) %></td>
+        <td><%= link_to 'Destroy', controle_gerenciamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Controle gerenciamento', new_controle_gerenciamento_path %>

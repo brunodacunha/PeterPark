@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marca: MyString
+  modelo: MyString
+  cor: MyString
+  placa: MyString
+  ano: MyString
+
+two:
+  marca: MyString
+  modelo: MyString
+  cor: MyString
+  placa: MyString
+  ano: MyString

@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  resources :controle_gerenciamentos
+
+  resources :gerenciamentos
+
+  resources :controles
+
+  resources :cadcarros
+
+  resources :cadusers
+
+  resources :logins
+
   get 'gerenciamento/gerenciamento'
 
   get 'cadastro_user/cadastroUser'

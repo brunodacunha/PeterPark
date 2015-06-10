@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @controle.placa %>
+</p>
+
+<p>
+  <strong>Hora entrada:</strong>
+  <%= @controle.hora_entrada %>
+</p>
+
+<p>
+  <strong>Hora saida:</strong>
+  <%= @controle.hora_saida %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @controle.total %>
+</p>
+
+<%= link_to 'Edit', edit_controle_path(@controle) %> |
+<%= link_to 'Back', controles_path %>

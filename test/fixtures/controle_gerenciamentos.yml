@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor_hora: 1.5
+  horaadd: 1.5
+  valor_diaria: 1.5
+  mensalista_meioturno: 1.5
+  mensalista_integral: 1.5
+  num_vagas: 1
+
+two:
+  valor_hora: 1.5
+  horaadd: 1.5
+  valor_diaria: 1.5
+  mensalista_meioturno: 1.5
+  mensalista_integral: 1.5
+  num_vagas: 1

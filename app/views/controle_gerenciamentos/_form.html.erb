@@ -1,0 +1,41 @@
+<%= form_for(@controle_gerenciamento) do |f| %>
+  <% if @controle_gerenciamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@controle_gerenciamento.errors.count, "error") %> prohibited this controle_gerenciamento from being saved:</h2>
+
+      <ul>
+      <% @controle_gerenciamento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :valor_hora %><br>
+    <%= f.text_field :valor_hora %>
+  </div>
+  <div class="field">
+    <%= f.label :horaadd %><br>
+    <%= f.text_field :horaadd %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_diaria %><br>
+    <%= f.text_field :valor_diaria %>
+  </div>
+  <div class="field">
+    <%= f.label :mensalista_meioturno %><br>
+    <%= f.text_field :mensalista_meioturno %>
+  </div>
+  <div class="field">
+    <%= f.label :mensalista_integral %><br>
+    <%= f.text_field :mensalista_integral %>
+  </div>
+  <div class="field">
+    <%= f.label :num_vagas %><br>
+    <%= f.number_field :num_vagas %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

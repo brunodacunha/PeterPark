@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Valor hora:</strong>
+  <%= @gerenciamento.valor_hora %>
+</p>
+
+<p>
+  <strong>Horaadd:</strong>
+  <%= @gerenciamento.horaadd %>
+</p>
+
+<p>
+  <strong>Valor diaria:</strong>
+  <%= @gerenciamento.valor_diaria %>
+</p>
+
+<p>
+  <strong>Mensalista meio turno:</strong>
+  <%= @gerenciamento.mensalista_meio_turno %>
+</p>
+
+<p>
+  <strong>Mensalista integral:</strong>
+  <%= @gerenciamento.mensalista_integral %>
+</p>
+
+<p>
+  <strong>Num vagas:</strong>
+  <%= @gerenciamento.num_vagas %>
+</p>
+
+<%= link_to 'Edit', edit_gerenciamento_path(@gerenciamento) %> |
+<%= link_to 'Back', gerenciamentos_path %>

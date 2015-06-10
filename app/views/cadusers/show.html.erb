@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @caduser.nome %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @caduser.rg %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @caduser.cpf %>
+</p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @caduser.placa %>
+</p>
+
+<p>
+  <strong>Box:</strong>
+  <%= @caduser.box %>
+</p>
+
+<p>
+  <strong>Turno:</strong>
+  <%= @caduser.turno %>
+</p>
+
+<%= link_to 'Edit', edit_caduser_path(@caduser) %> |
+<%= link_to 'Back', cadusers_path %>

@@ -1,0 +1,35 @@
+<h1>Listing cadusers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Rg</th>
+      <th>Cpf</th>
+      <th>Placa</th>
+      <th>Box</th>
+      <th>Turno</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadusers.each do |caduser| %>
+      <tr>
+        <td><%= caduser.nome %></td>
+        <td><%= caduser.rg %></td>
+        <td><%= caduser.cpf %></td>
+        <td><%= caduser.placa %></td>
+        <td><%= caduser.box %></td>
+        <td><%= caduser.turno %></td>
+        <td><%= link_to 'Show', caduser %></td>
+        <td><%= link_to 'Edit', edit_caduser_path(caduser) %></td>
+        <td><%= link_to 'Destroy', caduser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Caduser', new_caduser_path %>
