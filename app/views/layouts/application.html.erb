@@ -6,6 +6,7 @@
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
+		<h1>Peter Park - Estacionamento</h1>
 		<div id="user_nav">
 			<% if current_user %>
 			Logged in as <%= current_user.email %>.
@@ -18,6 +19,16 @@
 		<% flash.each do |name, msg| %>
 		<%= content_tag :div, msg, :id => "flash_#{name}" %>
 		<% end %>
+		
+		<div id="Menu">
+			
+<a href="http://localhost:3000/home/index">Home</a> 
+<a href="http://localhost:3000/cadcarros/">Cadastro de Carro</a>
+<a href="http://localhost:3000/controles/">Controle de Entrada e Saída</a>
+<a href="http://localhost:3000/cadusers/">Cadastro Usuário</a>
+<a href="http://localhost:3000/controle_gerenciamentos/">Controle de Gerenciamento</a>
+
+			</div>
 
 		<%= yield %>
 
