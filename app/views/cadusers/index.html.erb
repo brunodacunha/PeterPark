@@ -1,14 +1,14 @@
-<h1>Listing cadusers</h1>
+<h1>Cadastro de Cliente</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Rg</th>
-      <th>Cpf</th>
-      <th>Placa</th>
-      <th>Box</th>
-      <th>Turno</th>
+      <th>Nome,</th>
+      <th>Rg,</th>
+      <th>Cpf,</th>
+      <th>Placa,</th>
+      <th>Box,</th>
+      <th>Turno.</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,7 +24,7 @@
         <td><%= caduser.turno %></td>
         <td><%= link_to 'Show', caduser %></td>
         <td><%= link_to 'Edit', edit_caduser_path(caduser) %></td>
-        <td><%= link_to 'Destroy', caduser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', caduser, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Caduser', new_caduser_path %>
+<%= link_to 'Novo cadastro de Cliente', new_caduser_path %>

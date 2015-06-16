@@ -1,12 +1,12 @@
-<h1>Listing controles</h1>
+<h1>Controle de Entrada e Saída</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Placa</th>
-      <th>Hora entrada</th>
-      <th>Hora saida</th>
-      <th>Total</th>
+      <th>Placa,</th>
+      <th>Hora entrada,</th>
+      <th>Hora saida,</th>
+      <th>Total.</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,7 +20,7 @@
         <td><%= controle.total %></td>
         <td><%= link_to 'Show', controle %></td>
         <td><%= link_to 'Edit', edit_controle_path(controle) %></td>
-        <td><%= link_to 'Destroy', controle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', controle, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Controle', new_controle_path %>
+<%= link_to 'Novo Controle de Entrada e Saída', new_controle_path %>

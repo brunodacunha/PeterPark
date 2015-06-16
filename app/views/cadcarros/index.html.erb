@@ -1,13 +1,13 @@
-<h1>Listing cadcarros</h1>
+<h1>Cadastro de Carros</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Marca</th>
-      <th>Modelo</th>
-      <th>Cor</th>
-      <th>Placa</th>
-      <th>Ano</th>
+      <th>Marca,</th>
+      <th>Modelo,</th>
+      <th>Cor,</th>
+      <th>Placa,</th>
+      <th>Ano.</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,7 +22,7 @@
         <td><%= cadcarro.ano %></td>
         <td><%= link_to 'Show', cadcarro %></td>
         <td><%= link_to 'Edit', edit_cadcarro_path(cadcarro) %></td>
-        <td><%= link_to 'Destroy', cadcarro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', cadcarro, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Cadcarro', new_cadcarro_path %>
+<%= link_to 'Novo Cadastro', new_cadcarro_path %>
