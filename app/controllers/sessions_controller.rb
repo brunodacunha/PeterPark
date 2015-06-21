@@ -1,4 +1,8 @@
 class SessionsController < ApplicationController
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
   layout false
   def new
   end
