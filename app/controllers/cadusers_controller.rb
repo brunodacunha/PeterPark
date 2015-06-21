@@ -1,5 +1,6 @@
 class CadusersController < ApplicationController
   before_action :set_caduser, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /cadusers
   # GET /cadusers.json

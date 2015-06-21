@@ -1,5 +1,6 @@
 class CadcarrosController < ApplicationController
   before_action :set_cadcarro, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /cadcarros
   # GET /cadcarros.json

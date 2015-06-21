@@ -1,5 +1,6 @@
 class ControleGerenciamentosController < ApplicationController
   before_action :set_controle_gerenciamento, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /controle_gerenciamentos
   # GET /controle_gerenciamentos.json
