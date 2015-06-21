@@ -4,10 +4,13 @@
 		<title>Peterpark</title>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<%= csrf_meta_tags %>
+		
+		<%= stylesheet_link_tag "estilo.css" %>
+		
 	</head>
 	<body>
-		<h1>Peter Park - Estacionamento</h1>
-		<div id="user_nav">
+		<div class="heading"><h1 class="center">Peter Park - Estacionamento</h1>
+		<div id="user_nav" class="menu-login">
 			<% if current_user %>
 			Logged in as <%= current_user.email %>.
 			<%= link_to "Log out", log_out_path %>
@@ -15,12 +18,24 @@
 			<%= link_to "Sign up", sign_up_path %> or
 			<%= link_to "log in", log_in_path %>
 			<% end %>
-		</div>
+		
 		<% flash.each do |name, msg| %>
 		<%= content_tag :div, msg, :id => "flash_#{name}" %>
 		<% end %>
+		</div>
 		
-		<div id="Menu">
+		<div id="Menu" class="menu4">
+    <a href="http://localhost:3000/home/index"><span>Home</span></a>
+    <a href="http://localhost:3000/cadcarros/" ><span>Cadastro de Carro</span></a>
+    <a href="http://localhost:3000/controles/"><span>Contr Entrada-Saída</span></a>
+	<a href="http://localhost:3000/cadusers/"><span>Cadastro Usuário</span></a>
+	<a href="http://localhost:3000/controle_gerenciamentos/"><span>Controle de Gerenc</span></a>
+	   </div>
+	   <div class="menu4sub"> </div>
+		</div>
+		
+<!-- MENU ANTIGO		
+		<div id="Menu" class="menu">
 			
 <a href="http://localhost:3000/home/index">Home</a> 
 <a href="http://localhost:3000/cadcarros/">Cadastro de Carro</a>
@@ -28,7 +43,7 @@
 <a href="http://localhost:3000/cadusers/">Cadastro Usuário</a>
 <a href="http://localhost:3000/controle_gerenciamentos/">Controle de Gerenciamento</a>
 
-			</div>
+			</div> -->
 
 		<%= yield %>
 
