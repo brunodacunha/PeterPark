@@ -4,8 +4,10 @@
  .menu-login{
    position:relative;      
    float:right;        
-   color:white;
- }
+   color:red;
+   font-size:small;
+   font-weight:bold;
+   }
  
  .heading{
    background-image:url('parking2.png');
