@@ -29,7 +29,7 @@ class ControleGerenciamentosController < ApplicationController
 
     respond_to do |format|
       if @controle_gerenciamento.save
-        format.html { redirect_to @controle_gerenciamento, notice: 'Controle gerenciamento was successfully created.' }
+        format.html { redirect_to @controle_gerenciamento, notice: 'Controle gerenciamento Salvo com Sucesso.' }
         format.json { render :show, status: :created, location: @controle_gerenciamento }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ControleGerenciamentosController < ApplicationController
   def update
     respond_to do |format|
       if @controle_gerenciamento.update(controle_gerenciamento_params)
-        format.html { redirect_to @controle_gerenciamento, notice: 'Controle gerenciamento was successfully updated.' }
+        format.html { redirect_to @controle_gerenciamento, notice: 'Controle gerenciamento Editado com sucesso.' }
         format.json { render :show, status: :ok, location: @controle_gerenciamento }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ControleGerenciamentosController < ApplicationController
   def destroy
     @controle_gerenciamento.destroy
     respond_to do |format|
-      format.html { redirect_to controle_gerenciamentos_url, notice: 'Controle gerenciamento was successfully destroyed.' }
+      format.html { redirect_to controle_gerenciamentos_url, notice: 'Controle gerenciamento Exlcuido com sucesso.' }
       format.json { head :no_content }
     end
   end

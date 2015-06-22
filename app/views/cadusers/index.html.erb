@@ -1,4 +1,4 @@
-<h1>Cadastro de Cliente</h1>
+<center><h1>Cadastro de Cliente</h1>
 
 <table>
   <thead>
@@ -22,9 +22,9 @@
         <td><%= caduser.placa %></td>
         <td><%= caduser.box %></td>
         <td><%= caduser.turno %></td>
-        <td><%= link_to 'Show', caduser %></td>
-        <td><%= link_to 'Edit', edit_caduser_path(caduser) %></td>
-        <td><%= link_to 'Destroy', caduser, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+        <td><%= link_to 'Visualizar', caduser %></td>
+        <td><%= link_to 'Editar', edit_caduser_path(caduser) %></td>
+        <td><%= link_to 'Excluir', caduser, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -33,3 +33,4 @@
 <br>
 
 <%= link_to 'Novo cadastro de Cliente', new_caduser_path %>
+</center>

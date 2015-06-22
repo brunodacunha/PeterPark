@@ -29,7 +29,7 @@ class ControlesController < ApplicationController
 
     respond_to do |format|
       if @controle.save
-        format.html { redirect_to @controle, notice: 'Controle was successfully created.' }
+        format.html { redirect_to @controle, notice: 'Controle Salvo com sucesso.' }
         format.json { render :show, status: :created, location: @controle }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class ControlesController < ApplicationController
   def update
     respond_to do |format|
       if @controle.update(controle_params)
-        format.html { redirect_to @controle, notice: 'Controle was successfully updated.' }
+        format.html { redirect_to @controle, notice: 'Controle Ediatado com sucesso.' }
         format.json { render :show, status: :ok, location: @controle }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class ControlesController < ApplicationController
   def destroy
     @controle.destroy
     respond_to do |format|
-      format.html { redirect_to controles_url, notice: 'Controle was successfully destroyed.' }
+      format.html { redirect_to controles_url, notice: 'Controle Excluido com sucesso.' }
       format.json { head :no_content }
     end
   end

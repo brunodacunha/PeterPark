@@ -1,4 +1,4 @@
-<h1>Controle de Entrada e Saída</h1>
+<center><h1>Controle de Entrada e Saída</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= controle.hora_entrada %></td>
         <td><%= controle.hora_saida %></td>
         <td><%= controle.total %></td>
-        <td><%= link_to 'Show', controle %></td>
-        <td><%= link_to 'Edit', edit_controle_path(controle) %></td>
-        <td><%= link_to 'Destroy', controle, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+        <td><%= link_to 'Visualizar', controle %></td>
+        <td><%= link_to 'Editar', edit_controle_path(controle) %></td>
+        <td><%= link_to 'Excluir', controle, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,3 +29,4 @@
 <br>
 
 <%= link_to 'Novo Controle de Entrada e Saída', new_controle_path %>
+</center>

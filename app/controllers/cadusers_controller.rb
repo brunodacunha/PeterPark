@@ -29,7 +29,7 @@ class CadusersController < ApplicationController
 
     respond_to do |format|
       if @caduser.save
-        format.html { redirect_to @caduser, notice: 'Caduser was successfully created.' }
+        format.html { redirect_to @caduser, notice: 'Caduser Criado com sucesso.' }
         format.json { render :show, status: :created, location: @caduser }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class CadusersController < ApplicationController
   def update
     respond_to do |format|
       if @caduser.update(caduser_params)
-        format.html { redirect_to @caduser, notice: 'Caduser was successfully updated.' }
+        format.html { redirect_to @caduser, notice: 'Caduser Editado com Sucesso.' }
         format.json { render :show, status: :ok, location: @caduser }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class CadusersController < ApplicationController
   def destroy
     @caduser.destroy
     respond_to do |format|
-      format.html { redirect_to cadusers_url, notice: 'Caduser was successfully destroyed.' }
+      format.html { redirect_to cadusers_url, notice: 'Caduser Ecluido com sucesso.' }
       format.json { head :no_content }
     end
   end

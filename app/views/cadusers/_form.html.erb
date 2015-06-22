@@ -1,7 +1,7 @@
 <%= form_for(@caduser) do |f| %>
   <% if @caduser.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@caduser.errors.count, "error") %> prohibited this caduser from being saved:</h2>
+      <h2><%= pluralize(@caduser.errors.count, "erros") %> encontrados para proseguir, verifique os dados abaixo:</h2>
 
       <ul>
       <% @caduser.errors.full_messages.each do |message| %>
