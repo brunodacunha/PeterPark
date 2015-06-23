@@ -1,7 +1,7 @@
 <%= form_for(@controle_gerenciamento) do |f| %>
   <% if @controle_gerenciamento.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@controle_gerenciamento.errors.count, "error") %> prohibited this controle_gerenciamento from being saved:</h2>
+      <h2><%= pluralize(@controle_gerenciamento.errors.count, "erros") %> encontrados para proseguir, verifique os dados abaixo:</h2>
 
       <ul>
       <% @controle_gerenciamento.errors.full_messages.each do |message| %>

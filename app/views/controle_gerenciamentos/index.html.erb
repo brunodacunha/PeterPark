@@ -1,4 +1,4 @@
-<h1>Cadastro de valores</h1>
+<center><h1>Cadastrar valores</h1>
 <!-- controle_gerenciamentos -->
 <table>
   <thead>
@@ -8,11 +8,16 @@
       <th>Valor diaria,</th>
       <th>Mensalista meio turno,</th>
       <th>Mensalista integral,</th>
-      <th>Numero vagas<,/th>
+      <th>Numero vagas</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
+<br>
+
+<%= link_to 'Novos valores', new_controle_gerenciamento_path %>
+<br>
+<br>
   <tbody>
     <% @controle_gerenciamentos.each do |controle_gerenciamento| %>
       <tr>
@@ -22,14 +27,13 @@
         <td><%= controle_gerenciamento.mensalista_meioturno %></td>
         <td><%= controle_gerenciamento.mensalista_integral %></td>
         <td><%= controle_gerenciamento.num_vagas %></td>
-        <td><%= link_to 'Show', controle_gerenciamento %></td>
-        <td><%= link_to 'Edit', edit_controle_gerenciamento_path(controle_gerenciamento) %></td>
-        <td><%= link_to 'Destroy', controle_gerenciamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Visualizar', controle_gerenciamento %></td>
+        <td><%= link_to 'Editar', edit_controle_gerenciamento_path(controle_gerenciamento) %></td>
+        <td><%= link_to 'Excluir', controle_gerenciamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'Novos valores', new_controle_gerenciamento_path %>
+</center>
