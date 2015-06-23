@@ -4,18 +4,28 @@
  .menu-login{
    position:relative;      
    float:right;        
-   color:white;
- }
+   color:red;
+   font-size:small;
+   font-weight:bold;
+   }
  
+ .cabecario{
+   background-image:url('logo.png');
+   background-repeat: no-repeat;
+   height: 100px;
+   
+
+ 
+ }
  .heading{
-   background-image:url('parking2.png');
+  
  
  }
   
   .center{
           text-align:center;
-          color:white;
-          text-shadow: 2px 2px #3366FF;
+          color:black;
+          text-shadow: 2px 2px #eeeeee;
    }
  
  /* -------------------- MENU ------------------*/
@@ -42,7 +52,7 @@ div.menu4 a span
 {
     display: inline-block;
     background:#FFF url(bg.gif) repeat-x 100% 0;
-    padding: 0 20px;
+    padding: 0 18px;
     text-decoration:none;
     font: normal 12px Arial;
     line-height: 25px;
@@ -53,13 +63,13 @@ div.menu4 a span
 div.menu4 a:hover, div.menu4 a.current
 {
     background:#FFF url(bg.gif) repeat-x 0 -25px;
-    line-height: 26px;
+    line-height: 27px;
 }
 
 div.menu4 a:hover span, div.menu4 a.current span
 {
     background:#FFF url(bg.gif) repeat-x 100% -25px;
-    line-height: 26px;
+    line-height: 27px;
     color:#244D8A;
 }
 

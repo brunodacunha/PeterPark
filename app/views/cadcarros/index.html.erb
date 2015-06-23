@@ -1,4 +1,4 @@
-<h1>Cadastro de Carros</h1>
+<center><h1>Cadastro de Carros</h1>
 
 <table>
   <thead>
@@ -12,6 +12,13 @@
     </tr>
   </thead>
 
+<br>
+
+<%= link_to 'Novo Cadastro', new_cadcarro_path %>
+<br>
+<br>
+
+
   <tbody>
     <% @cadcarros.each do |cadcarro| %>
       <tr>
@@ -20,14 +27,13 @@
         <td><%= cadcarro.cor %></td>
         <td><%= cadcarro.placa %></td>
         <td><%= cadcarro.ano %></td>
-        <td><%= link_to 'Show', cadcarro %></td>
-        <td><%= link_to 'Edit', edit_cadcarro_path(cadcarro) %></td>
-        <td><%= link_to 'Destroy', cadcarro, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+        <td><%= link_to 'Visualizar', cadcarro %></td>
+        <td><%= link_to 'Editar', edit_cadcarro_path(cadcarro) %></td>
+        <td><%= link_to 'Excluir', cadcarro, method: :delete, data: { confirm: 'Deseja realmente excluir?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'Novo Cadastro', new_cadcarro_path %>
+</center>

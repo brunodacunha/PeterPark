@@ -28,7 +28,7 @@ class LoginsController < ApplicationController
 
     respond_to do |format|
       if @login.save
-        format.html { redirect_to @login, notice: 'Login was successfully created.' }
+        format.html { redirect_to @login, notice: 'Login Criado com sucesso.' }
         format.json { render :show, status: :created, location: @login }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class LoginsController < ApplicationController
   def update
     respond_to do |format|
       if @login.update(login_params)
-        format.html { redirect_to @login, notice: 'Login was successfully updated.' }
+        format.html { redirect_to @login, notice: 'Login Editado com sucesso.' }
         format.json { render :show, status: :ok, location: @login }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class LoginsController < ApplicationController
   def destroy
     @login.destroy
     respond_to do |format|
-      format.html { redirect_to logins_url, notice: 'Login was successfully destroyed.' }
+      format.html { redirect_to logins_url, notice: 'Login Excluido com sucesso.' }
       format.json { head :no_content }
     end
   end

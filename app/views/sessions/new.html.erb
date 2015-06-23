@@ -1,20 +1,24 @@
-<h1>Log in</h1>
+
+<center>
+<h1>Peter Park - Estacionamento</h1>
+<h3>Acesso ao Sistema</h3>
 
 <%= form_tag sessions_path do %>
 <p>
-	<%= label_tag :email %>
+	<%= label_tag :Usuário %>
 	<br />
 	<%= text_field_tag :email, params[:email] %>
 </p>
 <p>
-	<%= label_tag :password %>
+	<%= label_tag :Senha %>
 	<br />
 	<%= password_field_tag :password %>
 </p>
 <p class="button">
-	<%= submit_tag "Log in" %>
+	<%= submit_tag "Entrar" %>
 </p>
 <p>
-	<%= link_to "Sign up", sign_up_path %>
+	<!--<%= link_to "Sign up", sign_up_path %> -->
 </p>
 <% end %>
+</center>

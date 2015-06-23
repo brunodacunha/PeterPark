@@ -5,7 +5,7 @@ class CadcarrosController < ApplicationController
   # GET /cadcarros
   # GET /cadcarros.json
   def index
-    @cadcarros = Cadcarro.all
+      @cadcarros = Cadcarro.order(created_at: :desc)
   end
 
   # GET /cadcarros/1
@@ -29,7 +29,7 @@ class CadcarrosController < ApplicationController
 
     respond_to do |format|
       if @cadcarro.save
-        format.html { redirect_to @cadcarro, notice: 'Cadcarro was successfully created.' }
+        format.html { redirect_to @cadcarro, notice: 'Cadcarro criado com sucesso.' }
         format.json { render :show, status: :created, location: @cadcarro }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class CadcarrosController < ApplicationController
   def update
     respond_to do |format|
       if @cadcarro.update(cadcarro_params)
-        format.html { redirect_to @cadcarro, notice: 'Cadcarro was successfully updated.' }
+        format.html { redirect_to @cadcarro, notice: 'Cadcarro atualizad com sucesso.' }
         format.json { render :show, status: :ok, location: @cadcarro }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class CadcarrosController < ApplicationController
   def destroy
     @cadcarro.destroy
     respond_to do |format|
-      format.html { redirect_to cadcarros_url, notice: 'Cadcarro was successfully destroyed.' }
+      format.html { redirect_to cadcarros_url, notice: 'Cadcarro excluido com sucesso.' }
       format.json { head :no_content }
     end
   end

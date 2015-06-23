@@ -6,17 +6,21 @@
 		<%= csrf_meta_tags %>
 		
 		<%= stylesheet_link_tag "estilo.css" %>
+		<%= javascript_include_tag :application %>
 		
 	</head>
 	<body>
-		<div class="heading"><h1 class="center">Peter Park - Estacionamento</h1>
+		<div class="cabecario"> 
+         <h1 class="center">Sistema de controle para estacionamento</h1>
+		</div>
+		<div class="heading">
 		<div id="user_nav" class="menu-login">
 			<% if current_user %>
-			Logged in as <%= current_user.email %>.
-			<%= link_to "Log out", log_out_path %>
+			Olá,   <%= current_user.email %>.
+			<%= link_to "Sair", log_out_path %>
 			<% else %>
 			<%= link_to "Sign up", sign_up_path %> or
-			<%= link_to "log in", log_in_path %>
+			<%= link_to "Entrar", log_in_path %>
 			<% end %>
 		
 		<% flash.each do |name, msg| %>
@@ -27,9 +31,9 @@
 		<div id="Menu" class="menu4">
     <a href="http://localhost:3000/home/index"><span>Home</span></a>
     <a href="http://localhost:3000/cadcarros/" ><span>Cadastro de Carro</span></a>
-    <a href="http://localhost:3000/controles/"><span>Contr Entrada-Saída</span></a>
+    <a href="http://localhost:3000/controles/"><span>Controle Entrada-Saída</span></a>
 	<a href="http://localhost:3000/cadusers/"><span>Cadastro Usuário</span></a>
-	<a href="http://localhost:3000/controle_gerenciamentos/"><span>Controle de Gerenc</span></a>
+	<a href="http://localhost:3000/controle_gerenciamentos/"><span>Controle Gerenciamento</span></a>
 	   </div>
 	   <div class="menu4sub"> </div>
 		</div>
