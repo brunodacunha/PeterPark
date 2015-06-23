@@ -16,7 +16,13 @@
 		<div class="heading">
 		<div id="user_nav" class="menu-login">
 			<% if current_user %>
+<<<<<<< HEAD
 			Olá,   <%= current_user.email %>.
+=======
+<
+			Olá,   <%= current_user.email %>.
+
+>>>>>>> origin/master
 			<%= link_to "Sair", log_out_path %>
 			<% else %>
 			<%= link_to "Sign up", sign_up_path %> or
