@@ -21,6 +21,7 @@
         <td><%= link_to 'Visualizar', controle %></td>
         <td><%= link_to 'Editar', edit_controle_path(controle) %></td>
         <td><%= link_to 'Excluir', controle, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+        <td><%= link_to 'Calcular saida', controle %></td>
       </tr>
     <% end %>
   </tbody>

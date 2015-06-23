@@ -1,83 +1,79 @@
-.menu{
-      /*margin-left: 50%;*/
- }
- .menu-login{
-   position:relative;      
-   float:right;        
-   color:red;
-   font-size:small;
-   font-weight:bold;
-   }
-
- 
- .cabecario{
-   background-image:url('logo.png');
-   background-repeat: no-repeat;
-   height: 100px;
-   
-
- 
- }
- .heading{
-  
- 
- }
-  
-  .center{
-          text-align:center;
-          color:black;
-          text-shadow: 2px 2px #eeeeee;
-   }
- 
- /* -------------------- MENU ------------------*/
- div.menu4
-{
-    /*width:500px;margin:0 auto;*//*Uncomment this line to make the menu center-aligned.*/
-    text-align:center;
-    font-size:0;
-    height: 25px;  
-    *position:relative;*top:1px;/*Hacks for IE6 & IE7 */  
+.menu {
+	/*margin-left: 50%;*/
+}
+.menu-login {
+	position: relative;
+	float: right;
+	color: red;
+	font-size: small;
+	font-weight: bold;
 }
 
-div.menu4 a
-{
-    display: inline-block;
-    margin-right:6px; /* It specifies the distance between each tab */
-    background:#FFF url(bg.gif) repeat-x 0 0;
-    padding-left:4px;
-    vertical-align:top;/*ChangeSet#1*/
-    text-decoration:none;
+.cabecario-login {
+	background-image: url('logo.png');
+	width: 200px;
+	height: 100px;margin 0 auto;
+	text-align: center;
+}
+.cabecario {
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	height: 100px;
+}
+.heading {
+
 }
 
-div.menu4 a span
-{
-    display: inline-block;
-    background:#FFF url(bg.gif) repeat-x 100% 0;
-    padding: 0 18px;
-    text-decoration:none;
-    font: normal 12px Arial;
-    line-height: 25px;
-    color:#7087A9;
-    vertical-align:top;
+.center {
+	text-align: center;
+	color: black;
+	text-shadow: 2px 2px #eeeeee;
 }
 
-div.menu4 a:hover, div.menu4 a.current
-{
-    background:#FFF url(bg.gif) repeat-x 0 -25px;
-    line-height: 27px;
+/* -------------------- MENU ------------------*/
+div.menu4 {
+	/*width:500px;margin:0 auto;*//*Uncomment this line to make the menu center-aligned.*/
+	text-align: center;
+	font-size: 0;
+	height: 25px;
+	*position: relative;
+	*top: 1px;/*Hacks for IE6 & IE7 */
 }
 
-div.menu4 a:hover span, div.menu4 a.current span
-{
-    background:#FFF url(bg.gif) repeat-x 100% -25px;
-    line-height: 27px;
-    color:#244D8A;
+div.menu4 a {
+	display: inline-block;
+	margin-right: 6px; /* It specifies the distance between each tab */
+	background: #FFF url(bg.gif) repeat-x 0 0;
+	padding-left: 4px;
+	vertical-align: top;/*ChangeSet#1*/
+	text-decoration: none;
 }
 
-div.menu4sub
-{
-    height:8px;
-    border:1px solid #C2D5EF;
-    background:#eee url(bg.gif) repeat-x 0 -50px;
+div.menu4 a span {
+	display: inline-block;
+	background: #FFF url(bg.gif) repeat-x 100% 0;
+	padding: 0 18px;
+	text-decoration: none;
+	font: normal 12px Arial;
+	line-height: 25px;
+	color: #7087A9;
+	vertical-align: top;
+}
+
+div.menu4 a:hover, div.menu4 a.current {
+	background: #FFF url(bg.gif) repeat-x 0 -25px;
+	line-height: 27px;
+}
+
+div.menu4 a:hover span, div.menu4 a.current span {
+	background: #FFF url(bg.gif) repeat-x 100% -25px;
+	line-height: 27px;
+	color: #244D8A;
+}
+
+div.menu4sub {
+	height: 8px;
+	border: 1px solid #C2D5EF;
+	background: #eee url(bg.gif) repeat-x 0 -50px;
 }
 /*-------------FIM MENU----------------*/
