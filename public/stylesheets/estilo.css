@@ -8,6 +8,9 @@
    font-size:small;
    font-weight:bold;
    }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
  
  .cabecario{
    background-image:url('logo.png');
@@ -16,6 +19,21 @@
    
 
  
+=======
+
+>>>>>>> origin/master
+ 
+ .cabecario{
+   background-image:url('logo.png');
+   background-repeat: no-repeat;
+   height: 100px;
+   
+
+ 
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
  }
  .heading{
   
