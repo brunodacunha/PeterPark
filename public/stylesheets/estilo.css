@@ -9,7 +9,15 @@
    font-weight:bold;
    }
 
+ .cabecario-login{
+   background-image:url('logo.png');
+   background-repeat: no-repeat;
+   height: 100px;
+   width: 200px;
+   
+
  
+ } 
  .cabecario{
    background-image:url('logo.png');
    background-repeat: no-repeat;
