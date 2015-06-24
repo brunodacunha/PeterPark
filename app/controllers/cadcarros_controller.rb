@@ -5,7 +5,7 @@ class CadcarrosController < ApplicationController
   # GET /cadcarros
   # GET /cadcarros.json
   def index
-    @cadcarros = Cadcarro.all
+    @cadcarros = Cadcarro.order(created_at: :desc)
   end
 
   # GET /cadcarros/1

@@ -5,7 +5,7 @@ class CadusersController < ApplicationController
   # GET /cadusers
   # GET /cadusers.json
   def index
-    @cadusers = Caduser.all
+    @cadusers = Caduser.order(created_at: :desc)
   end
 
   # GET /cadusers/1

@@ -5,7 +5,7 @@ class ControlesController < ApplicationController
   # GET /controles
   # GET /controles.json
   def index
-    @controles = Controle.all
+    @controles = Controle.order(created_at: :desc)
   end
 
   # GET /controles/1

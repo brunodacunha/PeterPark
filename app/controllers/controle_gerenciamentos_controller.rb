@@ -5,7 +5,7 @@ class ControleGerenciamentosController < ApplicationController
   # GET /controle_gerenciamentos
   # GET /controle_gerenciamentos.json
   def index
-    @controle_gerenciamentos = ControleGerenciamento.all
+    @controle_gerenciamentos = ControleGerenciamento.order(created_at: :desc)
   end
 
   # GET /controle_gerenciamentos/1
